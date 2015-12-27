@@ -43,6 +43,9 @@ TARGET_USE_VENDOR_CAMERA_EXT := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_USES_AOSP := true
 
+# Disable Jack compilation
+ANDROID_COMPILE_WITH_JACK := false
+
 # Dex
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),user)
